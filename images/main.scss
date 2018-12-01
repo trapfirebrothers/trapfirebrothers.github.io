@@ -1,0 +1,565 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import url(http://fonts.googleapis.com/css?family=Trochut:400,400italic,100,700|Quantico);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600);
+@import 'sass-bootstrap/lib/bootstrap';
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #525252;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+   margin-bottom: 15px;
+   min-width: 965px;
+}
+
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 45px;
+    padding-bottom: 10px;
+
+    @media (max-width: 420px){
+        font-size: 16px;
+    }
+}
+
+.text-muted {
+        text-align: right;
+        font-family: 'Quantico', sans-serif;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+}
+
+
+/* Custom page footer */
+.footer {
+    min-width: 965px;
+    padding-top: 19px;
+    color: #777;
+    text-align: right;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    min-width: 965px;
+    height: 600px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.jumbotron .btn {
+
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 15px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+
+/**********************Custom styles************************/
+
+
+/************************ Start Modal **************************/
+
+.first-time-played {
+    /*text-align: left;*/
+}
+
+
+
+
+
+/************************ End Modal **************************/
+
+.glyphicon-expand {
+    font-size: 52px;
+    margin-left: 6px;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Safari and Chrome */
+    color: rgb(206, 86, 86);
+
+    @media (max-width: 420px) {
+        font-size: 36px;
+    }
+}
+
+.navigation-bar {
+    height: 50px;  
+    position: absolute;
+    border-radius: 4px 4px 0px 0px;
+    left: 0;
+    right: 0;
+    background-color: rgb(206, 86, 86);
+
+    ul {
+        text-align: left;
+        padding: 0px;
+    }
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+        color: white;
+        margin-right: 20px;
+        margin-left: 12px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    li:hover{
+        color: rgb(0, 140, 179);
+        padding: 10px;
+        padding-right: 14px;
+        background-color: #F8F8F8;
+        margin: 0 8px 0 0;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    li:active{
+        color: rgb(247, 116, 98);
+        padding: 10px;
+        padding-right: 14px;
+        background-color: rgb(248, 248, 248);
+        margin-left: 0px;
+    }
+
+}
+
+.navigation-bar.nav-active {
+        color: rgb(0, 140, 179);
+        padding: 10px;
+        padding-right: 14px;
+        background-color: #F8F8F8;
+        margin: 0 8px 0 0;
+}
+
+.jumbo-footer {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+}
+
+/*********** search box *************/
+
+#main-search {
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    height: 28px;
+    width: 300px;
+    font-size: 14px;
+    line-height: 0;
+}
+
+
+#main-search:focus{
+    outline-color: rgb(219, 141, 144);
+    outline-width: 3px;
+    outline-style: solid;
+
+}
+
+.submit {
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: 9px;
+    height: 28px;
+    letter-spacing: 1px;
+    line-height: 0px;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 33, 39);
+    border-color: rgb(180, 33, 39);
+}
+
+.submit:hover{
+    background-color: rgb(20, 123, 204);
+    border-color: rgb(20, 123, 204);
+}
+
+.submit:focus {
+    background-color: rgb(109, 197, 221);
+    border-color: rgb(127, 188, 204);
+}
+.submit:active {
+    background-color: rgb(109, 197, 221);
+    border-color: rgb(127, 188, 204);
+}
+/*********** CONTENT AREA **************/
+
+.content-area {
+    position: absolute;
+    left: 6px;
+    top: 60px;
+    height: 330px;
+    width: 98.5%;
+}
+
+/************** HOME VIEW *********************/
+
+.today {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    right: -13px;
+    color: rgb(115, 115, 115);
+    height: 14px;
+    line-height: 14px;
+    font-size: 20px;
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.setlist-scroll {
+    display: inline-block;
+    position: relative;
+    top: -42px;
+    height: 375px;
+    width: 500px;
+    overflow: scroll;
+    color: rgb(99, 51, 51);
+    text-align: left;
+    line-height: 12px;
+    font-size: 12px;
+    background-color: rgb(248, 248, 248);
+}
+
+#home-setlist {
+    padding-left: 0px;
+    padding-top: 8px;
+    list-style-position: inside;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -10px;
+
+    ol {
+        color: rgb(115, 115, 115);
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding-left: 0px;
+        }
+    
+
+    li {
+        border-top: 1px solid rgb(216, 216, 216);
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
+.stats-box {
+    border: 1px solid black;
+    height: 60px;
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+#year-stat {
+    color: rgb(115, 115, 115);
+    height: 14px;
+    line-height: 14px;
+    font-size: 16px;
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    top: -18px;
+}
+
+.home-combo {
+    height: 42px;
+}
+
+#home-setlist li:hover{
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#home-year {
+    position: relative;
+    top: -51px;
+    left: 200px;
+}
+
+.play-active {
+    background: url('images/play-selection.png');
+    height: 30px;
+    width: 30px;
+}
+
+/************* Currently Playing View ***********************************/
+
+#current-setlist {
+    padding-left: 0px;
+    padding-top: 8px;
+    list-style-position: inside;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -10px;
+
+    ol {
+        color: rgb(115, 115, 115);
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding-left: 0px;
+        }
+    
+
+    li {
+        border-top: 1px solid rgb(216, 216, 216);
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
+#current-locale {
+    position: absolute;
+    width: 200px;
+    top: 18px;
+    left: -50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+}
+
+#current-venue {
+    position: absolute;
+    width: 200px;
+    top: 36px;
+    left: -50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+    z-index: 2;
+}
+#current-setlist li:hover{
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+#current-year {
+    position: relative;
+    top: -10px;
+}
+
+.current-location {
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+}
+
+.current-venue {
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+}
+
+.set {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+/********* Arrows **********************************************/
+
+.left-arrow {
+    position: absolute;
+    left: 200px;
+    top: 185px;
+}
+
+.left-triangle {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    padding: 0px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+    background: rgb(20, 123, 204);
+    border-radius: 0px;
+    left: -120px;
+    top: 10px;
+    transition: .5s ease;
+}
+
+.left-triangle:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 17.6px 18px 17.5px 0;
+    border-color: rgba(0, 0, 0, 0) rgb(20, 123, 204);
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -18px;
+    top: 0px;
+    transition: .5s ease;
+}
+
+.left-triangle:hover{
+    width: 130px;
+    left: -140px;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 200px;
+    top: 185px;
+}
+
+
+.right-triangle {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    padding: 0px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+    background: rgb(20, 123, 204);
+    border-radius: 0px;
+    right: -120px;
+    top: 10px;
+    transition: .3s ease;
+}
+
+.right-triangle:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 17.6px 0px 17.5px 18px;
+    border-color: rgba(0, 0, 0, 0) rgb(20, 123, 204);
+    display: block;
+    width: 0;
+    z-index: 1;
+    right: -18px;
+    top: 0px;
+    transition: .3 ease;
+}
+
+.right-triangle:hover {
+    width: 130px;
+    right: -140px;
+    cursor: pointer;
+}
+
+
+
+
+.title {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+}
+
+/*********** Stats Button *************************************************/
+
+.stats-button {
+    position: absolute;
+    left: 233px;
+    top: 6px;
+    font-size: 14px;
+    font-weight: 200;
+    height: 30px;
+    width: 120px;
+    line-height: 8px;
+    text-align: center;
+    border-radius: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 123, 204);
+    border-color: rgb(20, 123, 204);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.stats-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 123, 204);
+    border-color: rgb(20, 123, 204);
+}
+
+.active {
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+
+.current-tab {
+        color: rgb(0, 140, 179) !important;
+        padding: 10px !important;
+        padding-right: 14px !important;
+        background-color: #F8F8F8 !important;
+        margin: 0 8px 0 0 !important;
+        border-radius: 4px 4px 0px 0px !important;
+}
